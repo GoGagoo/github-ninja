@@ -1,8 +1,9 @@
 'use client'
 
-import { Button, Container, Text } from '@/app/chakra'
+import { Container, Text } from '@/app/chakra'
 import Navbar from './components/Navbar'
 import SearchBar from './components/SearchBar'
+import UserProfile from './components/UserProfile'
 import { useState } from 'react'
 
 export default function Home() {
@@ -17,6 +18,8 @@ export default function Home() {
         Search users on GitHub
       </Text>
       <SearchBar setUserData={(res) => setUserData(res)} setLoading={setLoading} />
+
+      {userData && <UserProfile userData={userData} />} 
     </Container>
   )
 }
