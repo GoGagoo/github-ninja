@@ -1,6 +1,6 @@
 'use client'
 
-import { Container, Text } from '@/app/chakra'
+import { Container, Text } from '../app/chakra'
 import Navbar from './components/Navbar'
 import SearchBar from './components/SearchBar'
 import UserProfile from './components/UserProfile'

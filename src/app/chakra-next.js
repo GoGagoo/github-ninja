@@ -1,3 +1,2 @@
-'use client'
-
-export * from  '@chakra-ui/next-js'
+"use client";
+export * from "@chakra-ui/next-js";

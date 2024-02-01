@@ -1,5 +1,5 @@
 'use client'
-import { Badge, Button, Flex, Spinner, Text, useToast } from '@/app/chakra'
+import { Badge, Button, Flex, Spinner, Text, useToast } from '../chakra.js'
 import { Link } from '@chakra-ui/next-js'
 import { useEffect, useState } from 'react'
 

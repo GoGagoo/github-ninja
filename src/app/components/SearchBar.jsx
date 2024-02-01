@@ -1,6 +1,6 @@
 'use client'
 
-import { Button, Input, useToast } from '@/app/chakra'
+import { Button, Input, useToast } from '../chakra.js'
 import { useState } from 'react'
 
 const SearchBar = ({ setUserData, setLoading }) => {
@@ -26,6 +26,7 @@ const SearchBar = ({ setUserData, setLoading }) => {
 				})
 			}
 			setUserData(data)
+			addUserToLocaleStorage(data, query)
 		} catch (error) {
 			toast({
 				title: 'Error',
@@ -37,6 +38,23 @@ const SearchBar = ({ setUserData, setLoading }) => {
 		} finally {
 			setLoading(false)
 		}
+	}
+
+	const addUserToLocaleStorage = (data, username) => {
+		const users = JSON.parse(localStorage.getItem('guthub-users')) || []
+		const userExists = users.find(user => user.id === username)
+
+		if (userExists) {
+			users.splice(users.indexOf(userExists), 1)
+		}
+		users.unshift({
+			id: username,
+			avatar_url: data.avatar_url,
+			name: data.name,
+			url: data.html_user
+		})
+
+		localStorage.setItem('github-users', JSON.stringify(users))
 	}
 
 	return (

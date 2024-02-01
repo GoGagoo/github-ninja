@@ -1,4 +1,4 @@
-import { Avatar, Badge, Box, Button, Flex, Text, VStack } from '@/app/chakra'
+import { Avatar, Badge, Box, Button, Flex, Text, VStack } from '../chakra.js'
 import Repos from './Repos'
 
 const UserProfile = ({ userData }) => {
