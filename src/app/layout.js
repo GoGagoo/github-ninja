@@ -4,7 +4,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
 	title: 'GitHub Ninja',
-	description: 'A small site, thanks to which can get a Github user'\s profile',
+	description: 'A small site, thanks to which can get a Github user\'s profile',
 }
 
 export default function RootLayout({ children }) {
