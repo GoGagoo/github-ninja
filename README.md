@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GitHub Ninja
 
-## Getting Started
+![cv](https://i.postimg.cc/sxwyFJFG/252shots-so.jpg)
 
-First, run the development server:
+Добро пожаловать в репозиторий моего сайта [«GitHub Ninja»](https://github-ninja.vercel.app/). Сайт представляет из себя поисковую строку, благодаря которой можно получить профиль пользователя Github поисковым путем. Можно увидеть небольшую биографию и статистику. Также, если у пользователя Github есть репозитории, то можно это увидеть, нажав на соответствующую кнопку
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Особенности
+
+- Минималистический стиль;
+- Установка занимает всего несколько минут;
+- Мгновенный поиск профиля пользователя с биографией и статистикой;
+- Отображение репозиториев с их статистиками;
+- История последнего поискового запроса.
+
+
+  ## Справочник по цвету
+| Цвет             | Код цвета                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Основной цвет | ![#22C35E](https://via.placeholder.com/10/22C35E?text=+) #22C35E |
+| Вторичный цвет | ![#4A5568](https://via.placeholder.com/10/4A5568?text=+) #4A5568 |
+| Цвет заднего фона | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF |
+
+
+## Стек технологий
+
+Проект был разработан с использованием следующего стека технологий:
+
+### Фронтенд:
+
+- Фреймворк: [NextJs](https://nextjs.org/)
+- Стилизация: [ChakraUI](https://chakra-ui.com/)
+- API: [GitHub REST API](https://docs.github.com/en/rest?apiVersion=2022-11-28)
+
+## Файловая структура проекта:
+
+
 ```
+├── src
+│   ├── app
+│   │    ├── components
+│   │    ├── chakra.js
+│   │    ├── layout.tsx
+│   │    └── page.tsx
+└── next.config.js 
+ ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Начало работы в локальном режиме
 
-## Learn More
+1. Склонируйте этот репозиторий:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/GoGagoo/github-ninja.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Перейдите в директорию склонированного проекта:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   cd github-ninja
+   ```
 
-## Deploy on Vercel
+3. Установите зависимости:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. Запустите приложение:
+
+   ```bash
+   npm run dev
+
+## 🔗 Ссылки
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://gogagoo-portfolio.vercel.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gagikantonyan/)
+[![telegram](https://img.shields.io/badge/telegram-1DA1F2?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/doubleG_json)
